@@ -6,7 +6,7 @@ This is a ready-to-publish Reveal.js presentation showcasing:
 - Syntax-highlighted code
 - Mathematical equations (KaTeX)
 - Speaker notes
-- Your contact: **24f2005754@ds.study.iitm.ac.in**
+- Student email: **24f2005754@ds.study.iitm.ac.in**
 
 ## Quick Start
 1. **Create a new GitHub repository** named `quarterly-earnings` (or any name you like).
