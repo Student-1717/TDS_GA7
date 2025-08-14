@@ -1,0 +1,4 @@
+/* Minimal tweaks for a clean look */
+.subtitle { opacity: 0.85; margin-top: -0.5rem; }
+.reveal .slides section { text-align: left; }
+.reveal pre code { font-size: 0.9rem; line-height: 1.3; }
