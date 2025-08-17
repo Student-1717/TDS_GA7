@@ -23,9 +23,11 @@ Email: 24f2005754@ds.study.iitm.ac.in
 
 ---
 
-<!-- Background Image Slide -->
-<!-- _backgroundImage: url('https://example.com/background.png') -->
-# Overview of Product
+<!-- Slide with Background Image -->
+---
+# Product Overview
+_backgroundImage: url('https://via.placeholder.com/800x600.png?text=Product+Background')
+
 - Maintainable in version control  
 - Easy to convert to PDF, HTML, and PPTX  
 - Supports diagrams, math, and code  
