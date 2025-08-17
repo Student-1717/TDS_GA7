@@ -2,8 +2,10 @@
 - Revenue grew **+7.8% YoY** and **+3.1% QoQ**.
 - Cost-to-income ratio improved to **52%**.
 - CET1 ratio remains **well above** internal thresholds.
-- **Email for queries:** 24f2005754@ds.study.iitm.ac.in
-Note:
+# Quarterly Earnings Report
+**Technical Consulting Team**  
+Email: 24f2005754@ds.study.iitm.ac.in
+
 Use this slide as a concise snapshot. Pause here to solicit questions before diving deeper.
 ---
 ## Financial Performance
