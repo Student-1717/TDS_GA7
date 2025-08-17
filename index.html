@@ -1,121 +1,99 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quarterly Earnings — Interactive RevealJS Deck</title>
+<head>
+  <meta charset="utf-8">
+  <title>Quarterly Earnings Report</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Reveal.js styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/theme/black.css" id="theme">
 
-    <!-- Reveal.js core & plugins (CDN) -->
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/reveal.css">
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/theme/black.css" id="theme">
-    <!-- Syntax highlighting (reveal-highlight uses highlight.js under the hood) -->
-    <link rel="stylesheet" href="https://unpkg.com/highlight.js@11.9.0/styles/github.min.css">
+  <!-- Highlight.js for code -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/monokai-sublime.min.css">
+</head>
+<body>
 
-    <link rel="stylesheet" href="assets/style.css">
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <!-- Title Slide -->
-        <section>
-          <h1>Quarterly Earnings Report</h1>
-          <p class="subtitle">Modern, interactive presentation for stakeholders</p>
-          <p><strong>Prepared by:</strong> Technical Consultant</p>
-          <p><strong>Contact:</strong> <a href="mailto:24f2005754@ds.study.iitm.ac.in">24f2005754@ds.study.iitm.ac.in</a></p>
-          <aside class="notes">
-            Welcome the audience, mention that this deck showcases modern presentation capabilities: Markdown slides,
-            fragments, code highlighting, math typesetting, and speaker notes.
-            Remind yourself to pause for questions at the end of each section.
-          </aside>
-        </section>
+  <div class="reveal">
+    <div class="slides">
 
-        <!-- Agenda (with animated fragments) -->
-        <section>
-          <h2>Agenda</h2>
-          <ul>
-            <li class="fragment">Executive Summary</li>
-            <li class="fragment">Financial Performance</li>
-            <li class="fragment">Drivers &amp; Risk</li>
-            <li class="fragment">Technology &amp; Ops Highlights</li>
-            <li class="fragment">Outlook</li>
-          </ul>
-          <aside class="notes">
-            Use the fragmented build to step through the agenda.
-          </aside>
-        </section>
+      <!-- Slide 1: Title -->
+      <section>
+        <h1>Quarterly Earnings Report</h1>
+        <h3>Technical Consulting Team</h3>
+        <p>Email: <a href="mailto:24f2005754@ds.study.iitm.ac.in">24f2005754@ds.study.iitm.ac.in</a></p>
+      </section>
 
-        <!-- Markdown Slide (loaded from slides.md) -->
-        <section data-markdown="slides.md"
-                 data-separator="^---$"
-                 data-separator-vertical="^--$"
-                 data-separator-notes="^Note:">
-        </section>
+      <!-- Slide 2: Markdown Slide -->
+      <section data-markdown>
+        <script type="text/template">
+## Highlights of Q2
 
-        <!-- Code Sample with syntax highlighting -->
-        <section>
-          <h2>Code Sample: Calculating NPV</h2>
-          <pre><code class="language-python" data-trim>
-from math import pow
+- Revenue increased by **12%**
+- Operational costs decreased by **5%**
+- Customer satisfaction improved
+- New investments in AI analytics
 
-def npv(rate, cashflows):
-    """ rate as decimal (e.g., 0.1 for 10%) """
-    return sum(cf / pow(1 + rate, t) for t, cf in enumerate(cashflows))
+*Let's explore the details…*
+        </script>
+      </section>
 
-if __name__ == "__main__":
-    # t=0 is initial investment (negative)
-    cashflows = [-1_000_000, 300_000, 350_000, 400_000, 450_000]
-    print(npv(0.09, cashflows))
-          </code></pre>
-          <aside class="notes">
-            Explain how syntax highlighting helps reviewers grasp the gist quickly.
-            Use this sample to illustrate how finance functions can be unit-tested and integrated into dashboards.
-          </aside>
-        </section>
+      <!-- Slide 3: Animated Fragments -->
+      <section>
+        <h2>Revenue Breakdown</h2>
+        <ul>
+          <li class="fragment">Product A: $5M</li>
+          <li class="fragment">Product B: $3M</li>
+          <li class="fragment">Product C: $2M</li>
+        </ul>
+      </section>
 
-        <!-- Math slide -->
-        <section>
-          <h2>Key Financial Formulas</h2>
-          <p class="fragment">Net Present Value (NPV): \( \displaystyle \text{NPV} = \sum_{t=0}^{T} \frac{CF_t}{(1+r)^t} \)</p>
-          <p class="fragment">Return on Equity (ROE): \( \displaystyle \text{ROE} = \frac{\text{Net Income}}{\text{Avg. Shareholders' Equity}} \)</p>
-          <p class="fragment">Black–Scholes (Call): \( \displaystyle C = S_0\Phi(d_1) - Ke^{-rT}\Phi(d_2) \)</p>
-          <small class="fragment">with \( d_{1,2} = \frac{\ln(S_0/K) + (r \pm \tfrac{1}{2}\sigma^2)T}{\sigma \sqrt{T}} \)</small>
-          <aside class="notes">
-            Step through each formula using fragments. Keep explanations crisp and tie back to business outcomes.
-          </aside>
-        </section>
+      <!-- Slide 4: Code Sample -->
+      <section>
+        <h2>Python Code Example</h2>
+        <pre><code class="python">
+# Calculate ROI
+investment = 100000
+profit = 15000
+roi = (profit / investment) * 100
+print(f"Return on Investment: {roi}%")
+        </code></pre>
+      </section>
 
-        <!-- Closing -->
-        <section>
-          <h2>Thank You</h2>
-          <p>Deck URL (GitHub Pages): <span id="pages-url">https://YOUR-USERNAME.github.io/quarterly-earnings/</span></p>
-          <p>Force refresh: append <code>?v=1</code>, <code>?v=2</code>, etc.</p>
-          <aside class="notes">
-            Share the repo and invite feedback via issues or pull requests.
-          </aside>
-        </section>
-      </div>
+      <!-- Slide 5: Mathematical Equation -->
+      <section>
+        <h2>Financial Formula</h2>
+        <p>Net Present Value (NPV):</p>
+        <p>
+          $$NPV = \sum_{t=1}^{n} \frac{R_t}{(1+i)^t} - C_0$$
+        </p>
+      </section>
+
+      <!-- Slide 6: Speaker Notes -->
+      <section data-note="Highlight revenue growth and operational efficiency. Emphasize key drivers of profitability.">
+        <h2>Key Takeaways</h2>
+        <ul>
+          <li class="fragment">Strong revenue growth</li>
+          <li class="fragment">Cost efficiency initiatives working</li>
+          <li class="fragment">Focus on strategic investments</li>
+        </ul>
+      </section>
+
     </div>
+  </div>
 
-    <script src="https://unpkg.com/reveal.js@^5/dist/reveal.js"></script>
-    <script src="https://unpkg.com/reveal.js@^5/plugin/markdown/markdown.js"></script>
-    <script src="https://unpkg.com/reveal.js@^5/plugin/highlight/highlight.js"></script>
-    <script src="https://unpkg.com/reveal.js@^5/plugin/math/math.js"></script>
+  <!-- Reveal.js scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/plugin/notes/notes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/plugin/math/math.js"></script>
 
-    <script>
-      // Initialize Reveal
-      const deck = new Reveal({
-        hash: true,
-        slideNumber: true,
-        transition: 'slide',
-        plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX ],
-        // Math plugin configuration (KaTeX)
-        math: {
-          // Use KaTeX via CDN
-          katex: 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js',
-          katexStylesheet: 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css'
-        }
-      });
-      deck.initialize();
-    </script>
-  </body>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+    });
+  </script>
+</body>
 </html>
