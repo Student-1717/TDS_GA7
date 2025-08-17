@@ -1,28 +1,62 @@
-# Executive Summary
-- Revenue grew **+7.8% YoY** and **+3.1% QoQ**.
-- Cost-to-income ratio improved to **52%**.
-- CET1 ratio remains **well above** internal thresholds.
-# Quarterly Earnings Report
-**Technical Consulting Team**  
+---
+marp: true
+theme: custom
+paginate: true
+header: "Product Documentation"
+footer: "24f2005754@ds.study.iitm.ac.in"
+style: |
+  section {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+  }
+  h1 {
+    color: #2a9d8f;
+  }
+  h2 {
+    color: #e76f51;
+  }
+---
+
+# Product Documentation
+**Technical Writing Team**  
 Email: 24f2005754@ds.study.iitm.ac.in
 
-Use this slide as a concise snapshot. Pause here to solicit questions before diving deeper.
 ---
-## Financial Performance
-- **Net Interest Income**: up on higher volumes
-- **Fee Income**: resilient, diversified
-- **Credit Costs**: stable, within guidance
---
-### KPIs (build with fragments)
-- <span class="fragment">ROE: **14.2%**</span>
-- <span class="fragment">ROA: **1.1%**</span>
-- <span class="fragment">NIM: **3.4%**</span>
-Note:
-Advance one bullet at a time to maintain focus.
+
+<!-- Background Image Slide -->
+<!-- _backgroundImage: url('https://example.com/background.png') -->
+# Overview of Product
+- Maintainable in version control  
+- Easy to convert to PDF, HTML, and PPTX  
+- Supports diagrams, math, and code  
+
 ---
-## Risks & Mitigations
-1. **Market volatility** — hedging program in place
-2. **Credit concentration** — ongoing portfolio rebalancing
-3. **Ops risk** — automation and controls uplift
-Note:
-Tie each risk to a mitigation action and owner.
+
+# Features
+- Feature A: Fast and reliable
+- Feature B: User-friendly UI
+- Feature C: Extensible architecture
+
+---
+
+# Algorithmic Complexity
+- Sorting Algorithm Complexity:
+
+$$T(n) = O(n \log n)$$
+
+- Space Complexity:
+
+$$S(n) = O(n)$$
+
+---
+
+# Code Example
+```python
+def quicksort(arr):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+    return quicksort(left) + middle + quicksort(right)
